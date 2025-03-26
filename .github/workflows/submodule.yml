@@ -19,7 +19,7 @@ jobs:
           git config --global user.name "GitHub Actions"
 
       - name: Update submodules to latest commit
-        run: git submodule update --remote --force
+        run: echo "hello" > test.txt
 
       - name: Check for changes and commit if needed
         id: check_changes
