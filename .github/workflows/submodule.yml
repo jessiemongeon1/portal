@@ -35,7 +35,7 @@ jobs:
           # Check if the current SDK commit is latest release
           COMMIT1_FOUND=false
           for SDK_COMMIT in "${LATEST_SDK[@]}"; do
-            if [[ "$SUBMODULE1_HASH" == "$LATEST_SDK"* ]]; then
+            if [[ "$SDK_HASH" == "$LATEST_SDK"* ]]; then
               COMMIT1_FOUND=true
               break
             fi
@@ -57,7 +57,7 @@ jobs:
           # Check if the current Motoko commit is latest release
           COMMIT2_FOUND=false
           for MOTOKO_COMMIT in "${LATEST_MOTOKO[@]}"; do
-            if [[ "$SUBMODULE2_HASH" == "$LATEST_MOTOKO"* ]]; then
+            if [[ "$MOTOKO_HASH" == "$LATEST_MOTOKO"* ]]; then
               COMMIT2_FOUND=true
               break
             fi
