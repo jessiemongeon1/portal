@@ -19,10 +19,10 @@ jobs:
         id: get-submodule-hashes
         run: |
           # 
-          SDK_HASH=$(git submodule status /submodules/sdk | awk '{print $1}')
+          SDK_HASH=$(git submodule status submodules/sdk | awk '{print $1}')
           echo "SDK_hash=${SUBMODULE1_HASH}" >> $GITHUB_OUTPUT
 
-          MOTOKO_HASH=$(git submodule status /submodules/motoko | awk '{print $1}')
+          MOTOKO_HASH=$(git submodule status submodules/motoko | awk '{print $1}')
           echo "MOTOKO_hash=${SUBMODULE2_HASH}" >> $GITHUB_OUTPUT
 
       - name: Validate Submodule 1 Commit
