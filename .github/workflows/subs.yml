@@ -18,7 +18,7 @@ jobs:
         run: |
           # Define latest release commits
           LATEST_SDK="0a82e042adec6f24ba53665312713923bf276a34"
-          LATEST_MOTOKO="51fa74671829c59912c37500773cfaba950b0a1b"
+          LATEST_MOTOKO="a561fd3fe806613f41ff77d7b030ec5d32c293ff"
 
           # Get current submodule commits
           SDK_HASH=$(git submodule status submodules/sdk | awk '{print $1}')
