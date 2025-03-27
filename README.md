@@ -12,7 +12,7 @@ This repo is built and deployed using the latest version of `dfx` (v0.25.0) and 
 # Developer documentation
 
 ## Repo structure
-
+  
 ```
 docs
 ├── building-apps
